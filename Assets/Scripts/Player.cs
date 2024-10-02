@@ -16,13 +16,15 @@ public class Player : MonoBehaviour
     {
         Movimiento();
        
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
 
             Saltar();
+            
 
 
         }
+       
     }
     void Movimiento()
     {
@@ -41,8 +43,10 @@ public class Player : MonoBehaviour
     }
     void Saltar()
     {
-        rb.AddForce(0,3, 0, ForceMode.Impulse);
+        rb.AddForce(0, 3, 0, ForceMode.Impulse);
+
     }
+
 
 
 
