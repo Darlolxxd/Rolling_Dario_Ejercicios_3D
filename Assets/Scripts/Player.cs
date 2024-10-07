@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
     Rigidbody rb;
+    int vidas;
+     
     // Start is called before the first frame update
     void Start()
     {
@@ -43,9 +46,12 @@ public class Player : MonoBehaviour
     }
     void Saltar()
     {
-        rb.AddForce(0, 3, 0, ForceMode.Impulse);
+        rb.AddForce(0, 4, 0, ForceMode.Impulse);
 
     }
+    
+
+    
 
 
 
