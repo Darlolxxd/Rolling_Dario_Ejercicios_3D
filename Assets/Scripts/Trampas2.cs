@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Trampa : MonoBehaviour
+public class Trampas2 : MonoBehaviour
 {
-    public float rotationSpeed = 100;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +13,6 @@ public class Trampa : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate( 0, rotationSpeed * Time.deltaTime, 0);
+        
     }
 }
