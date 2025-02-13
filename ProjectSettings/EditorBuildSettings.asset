@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/RollBallMenu.unity
+    guid: ca31211b08352a543b09b4bc08d909b3
+  - enabled: 1
+    path: Assets/Scenes/RollBallTrack.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/RollBallGameOver.unity
+    guid: b8a8fc7145e6ddb49bb4aec73c538481
   m_configObjects: {}

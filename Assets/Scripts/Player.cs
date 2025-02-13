@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -23,11 +24,12 @@ public class Player : MonoBehaviour
         {
 
             Saltar();
-            
-
-
         }
        
+        if (CheckGameOverCondition()) {
+            Time.timeScale = 0f;  // pause play
+            SceneManager.LoadScene("RollBallGameOver");
+        }
     }
     void Movimiento()
     {
@@ -49,9 +51,21 @@ public class Player : MonoBehaviour
         rb.AddForce(0, 4, 0, ForceMode.Impulse);
 
     }
-    
 
-    
+    bool CheckGameOverCondition()
+    {
+        // If the ball falls, the game is over
+        if (transform.position.y <= -50)
+        {
+            return true;
+        }
+        else
+        {
+             return false;  // Replace with actual condition
+        }
+      
+    }
+
 
 
 

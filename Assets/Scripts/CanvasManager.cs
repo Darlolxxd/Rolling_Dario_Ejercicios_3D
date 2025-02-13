@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class CanvasManager : MonoBehaviour
 {
-   public void EmpezarPartida()
+public void EmpezarPartida()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
     
 }
